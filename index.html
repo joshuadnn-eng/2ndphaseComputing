@@ -68,6 +68,14 @@ section{scroll-margin-top:16px}
 @keyframes wag{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
 .thumb{transform-origin:204px 190px;transform-box:view-box;animation:wag 1.3s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){.thumb{animation:none}}
+.bubble{position:absolute;left:28px;right:28px;top:26px;max-width:380px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px 14px;box-shadow:0 14px 34px rgba(11,27,63,.14);text-decoration:none;color:var(--navy);display:flex;flex-direction:column;gap:6px;opacity:0;transform:translateY(24px) scale(.96);transition:opacity .6s ease,transform .7s cubic-bezier(.2,1.3,.5,1);z-index:2}
+.bubble.show{opacity:1;transform:none;animation:bob 4s 1s ease-in-out infinite}
+.bubble:hover{color:var(--navy);border-color:var(--blue)}
+.bubble::after{content:"";position:absolute;left:50%;bottom:-9px;width:16px;height:16px;background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transform:translateX(-50%) rotate(45deg)}
+.bubble .bstars{font:700 34px/.5 Sora,sans-serif;color:var(--gold);height:14px;margin-top:4px}
+.bubble q{quotes:none;font-size:15px;line-height:1.5}.bubble small{font-size:13px;color:var(--mute);font-weight:600}
+@keyframes bob{0%,100%{transform:none}50%{transform:translateY(-5px)}}
+@media (prefers-reduced-motion:reduce){.bubble{transition:none}.bubble.show{animation:none}}
 /* tiles */
 .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .tile{display:flex;flex-direction:column;gap:14px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--navy);transition:border-color .15s,box-shadow .15s,transform .15s}
@@ -179,7 +187,7 @@ a.chip:hover{border-color:var(--blue);color:var(--navy)}
  .cards3,.revs,.fix,.fgrid{grid-template-columns:1fr}
  .head-row{flex-direction:column;align-items:flex-start}
  .btn{height:52px;padding:0 20px}.hero .btns .btn{flex:1 1 100%}
- .art{height:320px}.art .tech{width:200px;height:250px}.badge{bottom:20px}
+ .art{height:400px}.art .tech{width:200px;height:250px}.badge{bottom:20px}.bubble{left:14px;right:14px;top:16px;padding:12px 14px}.bubble q{font-size:14px}
  .fab{right:16px;bottom:86px;width:56px;height:56px}
  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:35;background:#fff;border-top:1px solid var(--line);padding:10px 16px;gap:10px}
  .mbar a,.mbar span{flex:1;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font:600 15px Sora,sans-serif;color:var(--navy)}
@@ -219,6 +227,7 @@ var t=setTimeout(done,2200);i.querySelector('button').addEventListener('click',f
 <p class="rate"><span class="stars">★★★★★</span>&nbsp; <strong>4.8 on Google</strong> · 135 De Wet St, Krugersdorp</p>
 </div>
 <div class="art"><svg class="bolts" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true"><path d="M1080 0 L1010 180 L1060 190 L960 420 L1000 428 L900 640" stroke="#1E6FFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/><path d="M1010 180 L940 250" stroke="#1E6FFF" stroke-width="2" stroke-linecap="round" opacity=".22"/><path d="M300 900 L360 760 L320 752 L400 580" stroke="#1E6FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".2"/></svg><svg class="tech" width="240" height="300" viewBox="0 0 240 300" aria-label="2ndPhase technician"><path d="M34 300 Q36 214 120 204 Q204 214 206 300 Z" fill="#1E6FFF"></path><path d="M98 206 L120 238 L142 206 Q131 212 120 212 Q109 212 98 206 Z" fill="#1558D6"></path><circle cx="160" cy="252" r="11" fill="#FFC629"></circle><rect x="104" y="176" width="32" height="34" rx="10" fill="#E9B58C"></rect><circle cx="68" cy="134" r="11" fill="#F7CFA8"></circle><circle cx="172" cy="134" r="11" fill="#F7CFA8"></circle><ellipse cx="120" cy="132" rx="52" ry="58" fill="#F7CFA8"></ellipse><path d="M70 110 Q70 124 76 132 L78 112 Z" fill="#3B2A20"></path><path d="M170 110 Q170 124 164 132 L162 112 Z" fill="#3B2A20"></path><path d="M66 112 Q66 60 120 58 Q174 60 174 112 Z" fill="#1558D6"></path><circle cx="120" cy="60" r="5" fill="#FFC629"></circle><circle cx="113" cy="86" r="5" fill="#FFC629"></circle><circle cx="127" cy="86" r="5" fill="#FFC629"></circle><path d="M110 91 Q120 87 130 91 L126 99 Q120 104 114 99 Z" fill="#FFC629"></path><path d="M60 110 Q120 98 186 112 Q190 122 176 124 Q120 114 62 122 Q54 118 60 110 Z" fill="#0E3E9E"></path><path d="M92 120 Q100 115 108 119" stroke="#3B2A20" stroke-width="4" stroke-linecap="round" fill="none"></path><path d="M132 119 Q140 115 148 120" stroke="#3B2A20" stroke-width="4" stroke-linecap="round" fill="none"></path><ellipse cx="100" cy="133" rx="5.5" ry="7" fill="#0B1B3F"></ellipse><ellipse cx="140" cy="133" rx="5.5" ry="7" fill="#0B1B3F"></ellipse><circle cx="102" cy="130" r="2" fill="#ffffff"></circle><circle cx="142" cy="130" r="2" fill="#ffffff"></circle><circle cx="88" cy="152" r="8" fill="#F29C86" opacity="0.45"></circle><circle cx="152" cy="152" r="8" fill="#F29C86" opacity="0.45"></circle><path d="M120 137 Q127 147 119 151" stroke="#D69A70" stroke-width="3" fill="none" stroke-linecap="round"></path><path d="M96 160 Q120 186 144 160 Z" fill="#7A2E2E"></path><path d="M99 161 Q120 168 141 161 L139 165 Q120 171 101 165 Z" fill="#ffffff"></path><path d="M186 232 Q214 214 214 184 L196 182 Q194 204 172 216 Z" fill="#1E6FFF"></path><g class="thumb"><rect x="192" y="160" width="30" height="28" rx="9" fill="#ffffff" stroke="#DCE5F7" stroke-width="2"></rect><rect x="187" y="138" width="12" height="28" rx="6" fill="#ffffff" stroke="#DCE5F7" stroke-width="2" transform="rotate(-14 193 162)"></rect><path d="M203 168h14M203 175h14M203 182h12" stroke="#C9D3E8" stroke-width="2" stroke-linecap="round"></path></g></svg>
+<a class="bubble" id="bubble" href="https://www.google.com/maps/search/?api=1&query=2ndPhase+Computing+135+De+Wet+St+Krugersdorp" target="_blank" rel="noopener" aria-live="polite"><span class="bstars" aria-hidden="true">“</span><q id="bq"></q><small id="bn"></small></a>
 <a class="badge" href="https://www.google.com/maps/search/?api=1&query=2ndPhase+Computing+135+De+Wet+St+Krugersdorp" target="_blank" rel="noopener"><span class="n">4.8</span><span><b>Rated by real customers</b><span>24 Google reviews</span></span></a></div>
 </section></div>
 
@@ -267,6 +276,9 @@ window.dataLayer=window.dataLayer||[];
 d.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'',k=h.indexOf('tel:')===0?'call_click':h.indexOf('wa.me')>-1?'whatsapp_click':h.indexOf('mailto:')===0?'email_click':null;if(k)window.dataLayer.push({event:k,page:location.pathname,label:a.dataset.label||''})});
 })();
 </script>
-
+<script>(function(){var R=[{"t": "Quick Excellent service, fixed my MacBook Pro within 3 hours on a Sunday at 6PM, Great Pricing. Would Recommend, also…", "n": "Brendon B."}, {"t": "I thought my laptop was completely done for after water damage. Took it to 2nd Phase Computing and they worked…", "n": "Dawood C."}, {"t": "Albertus proposed that I clone the C-Drive to my existing larger SSD. He managed to complete the cloning process, load…", "n": "Nicole H."}, {"t": "We contacted 2ndphase Computing to assist with a cabling extension and boardroom display installation for one of our…", "n": "Riaan C."}, {"t": "Quick service, I had my laptop that was super slow, booked in next day all my data was back on a perfect ssd upgrade. I…", "n": "Fred S."}, {"t": "Recently replace my MacBook LCD at 2nd phase computing and couldn't have asked for better service, it was quick and…", "n": "Amaarah C."}, {"t": "I brought my cutter machine without a hope to be fixed, but they managed to fix it. Reliable and reasonable cost.", "n": "Sivuyile M."}, {"t": "If any one ever wondered who to call for any pc related issues may it be parts repairs data recovery any system any…", "n": "Riaan D."}];if(!R.length)return;var k=0;try{k=(+localStorage.getItem('2p_rev')+1)%R.length}catch(e){k=Math.floor(Math.random()*R.length)}
+try{localStorage.setItem('2p_rev',k)}catch(e){}
+var r=R[k],b=document.getElementById('bubble');document.getElementById('bq').textContent=r.t;document.getElementById('bn').textContent=r.n+' · Google review';
+var i=document.getElementById('intro'),wait=(i&&i.classList.contains('on'))?2800:500;setTimeout(function(){b.classList.add('show')},wait);})();</script>
 </body>
 </html>
