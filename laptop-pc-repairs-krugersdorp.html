@@ -89,11 +89,14 @@ section{scroll-margin-top:16px}
 @media (max-width:640px){.track .slide{flex-basis:88%}}
 /* Patch mascot */
 .hero-patch{background:radial-gradient(ellipse at 50% 30%,#22355A 0%,#0E1626 75%);border-color:#1B2A47;align-items:stretch}
-.hero-patch .patch{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0;animation:hover 5s ease-in-out infinite;transform-origin:50% 100%;-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent)}
-@keyframes hover{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-8px) scale(1.012)}}
-.zap{position:absolute;bottom:2%;width:34%;height:30%;border-radius:50%;background:radial-gradient(circle,rgba(110,170,255,.75) 0%,rgba(30,111,255,.35) 35%,transparent 70%);mix-blend-mode:screen;pointer-events:none;animation:zap 2.6s infinite}
-.zl{left:-6%}.zr{right:-8%;animation-delay:1.1s}
-@keyframes zap{0%,100%{opacity:.25}8%{opacity:1}12%{opacity:.4}16%{opacity:.95}30%{opacity:.35}60%{opacity:.55}}
+.pstage{position:absolute;left:0;right:0;top:0;aspect-ratio:682/1024;transform:translateY(-9%);animation:hover 5s ease-in-out infinite;-webkit-mask-image:linear-gradient(#000 64%,transparent 74%);mask-image:linear-gradient(#000 64%,transparent 74%)}
+.pstage .patch{position:absolute;inset:0;width:100%;height:100%}
+.phand{position:absolute;left:4.106%;top:37.598%;width:25.953%;height:26.367%;transform-origin:69% 91%;animation:wag 2.6s ease-in-out infinite}
+@keyframes wag{0%,40%,100%{transform:rotate(0)}10%{transform:rotate(-7deg)}20%{transform:rotate(6deg)}30%{transform:rotate(-4deg)}}
+@keyframes hover{0%,100%{transform:translateY(-9%)}50%{transform:translateY(calc(-9% - 6px))}}
+.zap{position:absolute;width:34%;height:30%;border-radius:50%;background:radial-gradient(circle,rgba(110,170,255,.7) 0%,rgba(30,111,255,.3) 35%,transparent 70%);mix-blend-mode:screen;pointer-events:none;animation:zap 2.6s infinite}
+.zl{left:0;top:35%}
+@keyframes zap{0%,100%{opacity:.2}8%{opacity:.9}12%{opacity:.35}16%{opacity:.85}30%{opacity:.3}60%{opacity:.5}}
 .hero-patch::after{content:"";position:absolute;inset:0;background:rgba(140,190,255,.0);pointer-events:none;animation:flash 7s infinite}
 @keyframes flash{0%,93%,100%{background:rgba(140,190,255,0)}94%{background:rgba(140,190,255,.18)}96%{background:rgba(140,190,255,0)}97%{background:rgba(140,190,255,.12)}}
 #intro{background:radial-gradient(ellipse at 50% 42%,#1D2D4C 0%,#0B1220 65%)!important}
@@ -101,8 +104,8 @@ section{scroll-margin-top:16px}
 @keyframes flick{0%,100%{filter:none}10%{filter:brightness(1.5)}14%{filter:none}20%{filter:brightness(1.35)}}
 #intro p{color:#fff!important}#intro .bar{background:#22355A!important}
 #intro button{background:transparent!important;color:#C9D3E8!important;border-color:#2C4170!important}
-@media (prefers-reduced-motion:reduce){.hero-patch .patch,.zap,.hero-patch::after{animation:none}}
-.hero-patch .bubble{top:auto;bottom:22px}
+@media (prefers-reduced-motion:reduce){.pstage,.phand,.zap,.hero-patch::after{animation:none}}
+.hero-patch .bubble{top:auto;bottom:22px;left:auto;right:18px;max-width:56%;margin:0}.hero-patch .bubble q{font-size:14px}
 .hero-patch .bubble::after{bottom:auto;top:-9px;transform:translateX(-50%) rotate(225deg)}
 .hero-patch .badge{bottom:auto;top:18px;left:18px;padding:8px 12px;gap:10px;border-radius:12px}
 .hero-patch .badge .n{width:34px;height:34px;font-size:14px;border-radius:9px}.hero-patch .badge b{font-size:13px}.hero-patch .badge span span{font-size:11px}
@@ -217,7 +220,7 @@ a.chip:hover{border-color:var(--blue);color:var(--navy)}
  .cards3,.revs,.fix,.fgrid{grid-template-columns:1fr}
  .head-row{flex-direction:column;align-items:flex-start}
  .btn{height:52px;padding:0 20px}.hero .btns .btn{flex:1 1 100%}
- .art{height:440px}.hero-patch .badge{display:none}.art .tech{width:200px;height:250px}.badge{bottom:20px}.bubble{left:14px;right:14px;top:16px;padding:12px 14px}.bubble q{font-size:14px}
+ .art{height:440px}.hero-patch .badge{display:none}.art .tech{width:200px;height:250px}.badge{bottom:20px}.bubble{left:14px;right:14px;top:16px;padding:12px 14px}.hero-patch .bubble{max-width:66%;right:12px;bottom:14px}.hero-patch .bubble q{font-size:13px}.bubble q{font-size:14px}
  .fab{right:16px;bottom:86px;width:56px;height:56px}
  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:35;background:#fff;border-top:1px solid var(--line);padding:10px 16px;gap:10px}
  .mbar a,.mbar span{flex:1;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font:600 15px Sora,sans-serif;color:var(--navy)}
