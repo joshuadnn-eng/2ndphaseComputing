@@ -89,10 +89,10 @@ section{scroll-margin-top:16px}
 @media (max-width:640px){.track .slide{flex-basis:88%}}
 /* Patch mascot */
 .hero-patch{background:radial-gradient(ellipse at 50% 30%,#22355A 0%,#0E1626 75%);border-color:#1B2A47;align-items:stretch}
-.pstage{position:absolute;left:0;right:0;top:0;aspect-ratio:682/1024;transform:translateY(-9%);animation:hover 5s ease-in-out infinite;-webkit-mask-image:linear-gradient(#000 64%,transparent 74%);mask-image:linear-gradient(#000 64%,transparent 74%)}
+.pstage{position:absolute;left:0;right:0;top:0;aspect-ratio:682/1024;transform:translateY(-9%);-webkit-mask-image:linear-gradient(#000 64%,transparent 74%);mask-image:linear-gradient(#000 64%,transparent 74%)}
 .pstage .patch{position:absolute;inset:0;width:100%;height:100%}
-.phand{position:absolute;left:4.106%;top:37.598%;width:25.953%;height:26.367%;transform-origin:69% 91%;animation:wag 2.6s ease-in-out infinite}
-@keyframes wag{0%,40%,100%{transform:rotate(0)}10%{transform:rotate(-7deg)}20%{transform:rotate(6deg)}30%{transform:rotate(-4deg)}}
+.phand{position:absolute;left:4.106%;top:37.598%;width:25.953%;height:26.367%;transform-origin:69% 91%;animation:wag 1.3s ease-in-out infinite}
+@keyframes wag{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
 @keyframes hover{0%,100%{transform:translateY(-9%)}50%{transform:translateY(calc(-9% - 6px))}}
 .zap{position:absolute;width:34%;height:30%;border-radius:50%;background:radial-gradient(circle,rgba(110,170,255,.7) 0%,rgba(30,111,255,.3) 35%,transparent 70%);mix-blend-mode:screen;pointer-events:none;animation:zap 2.6s infinite}
 .zl{left:0;top:35%}
@@ -250,7 +250,7 @@ a.chip:hover{border-color:var(--blue);color:var(--navy)}
 <section class="shero">
 <div class="txt"><p class="eyebrow">Custom PCs and parts</p><h1>Custom Gaming & Office PCs in Krugersdorp</h1><p class="lead">Tell us what you need it for and what you want to spend. We'll build a PC that fits, or upgrade the one you've got.</p>
 <div class="btns"><a class="btn gold" href="https://wa.me/27649059714?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20custom%20PC.%20My%20budget%20is%3A%20" target="_blank" rel="noopener" data-label="service hero"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1 1 9 19z"/></svg>Tell us your budget</a><a class="btn line" href="contact.html?s=custom-pcs-parts-krugersdorp#book"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Book a time</a><a class="btn line js-call" href="tel:0649059714">Call 064 905 9714</a><span class="closed">Closed for calls right now. WhatsApp us, we're on 24/7.</span></div>
-<p class="rate"><span class="stars">★★★★★</span>&nbsp; <strong>4.8 on Google</strong> · Calls 8am to 6pm, Mon to Sat · WhatsApp 24/7</p></div>
+<p class="rate"><span class="stars">★★★★★</span>&nbsp; <strong>4.8 on Google</strong> · Calls 8am to 6pm, Mon to Fri · WhatsApp 24/7</p></div>
 <div class="facts"><div class="big"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#1E6FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></div><ul>
 <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E6FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg><div><b>A clear quote first</b><span>We find the problem and tell you the cost before we start.</span></div></li>
 <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E6FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1 1 9 19z"/></svg><div><b>WhatsApp us 24/7</b><span>Send a message or photo any time, day or night.</span></div></li>
@@ -276,13 +276,101 @@ a.chip:hover{border-color:var(--blue);color:var(--navy)}
 <div class="fgrid">
 <div><a class="brand" href="index.html" style="color:#fff"><span style="width:50px;height:50px;border-radius:25px;background:#fff;display:flex;align-items:center;justify-content:center"><img src="assets/2ndphase-mark.png" width="40" height="40" alt="" style="display:block"></span><b style="font-size:22px"><span style="color:#7FB0FF">2nd</span>Phase</b></a><div style="line-height:1.6">Giving your tech its second phase.</div></div>
 <div><div class="t">Visit us</div><div>135 De Wet St</div><div>Krugersdorp, 1741</div><a class="y" href="https://www.google.com/maps/search/?api=1&query=2ndPhase+Computing+135+De+Wet+St+Krugersdorp" target="_blank" rel="noopener">Get directions</a></div>
-<div><div class="t">Hours</div><div>Calls and bookings: 8am to 6pm, Mon to Sat</div><div>Sundays: by appointment only</div><div>WhatsApp: 24/7, Mon to Sun</div></div>
+<div><div class="t">Hours</div><div>Calls and bookings: 8am to 6pm, Mon to Fri</div><div>Weekends: WhatsApp only</div><div>WhatsApp: 24/7, Mon to Sun</div></div>
 <div><div class="t">Get in touch</div><a href="tel:0649059714" data-label="footer">064 905 9714</a><a href="mailto:2ndPhaseComputing@gmail.com">2ndPhaseComputing@gmail.com</a><a class="fb" href="contact.html#book">Book a time</a></div>
 </div>
 <div class="fbot"><span>© 2ndPhase Computing · Serving Krugersdorp and the West Rand · Proudly supporting local NPOs</span><nav aria-label="Footer"><a href="index.html#services">Services</a><a href="specials.html">Specials</a><a href="value-calculator.html">Calculate your tech</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy policy</a></nav></div>
 </div></footer>
 <a class="fab" href="https://wa.me/27649059714?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20custom%20PC.%20My%20budget%20is%3A%20" target="_blank" rel="noopener" aria-label="WhatsApp us" data-label="float"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1 1 9 19z"/><path d="M9.5 9.5c0 3 2 5 5 5l1-1.5-2-1-1 .8a3 3 0 0 1-1.8-1.8l.8-1-1-2z"/></svg></a>
-<div class="mbar"><a class="c js-call" href="tel:0649059714" data-label="mobile bar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call</a><span class="c closed">Calls 8am to 6pm</span><a class="w" href="https://wa.me/27649059714?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20custom%20PC.%20My%20budget%20is%3A%20" target="_blank" rel="noopener" data-label="mobile bar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1 1 9 19z"/></svg>WhatsApp</a></div>
+<div class="mbar"><a class="c js-call" href="tel:0649059714" data-label="mobile bar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call</a><span class="c closed">Calls 8am to 6pm</span><a class="w" href="https://wa.me/27649059714?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20a%20custom%20PC.%20My%20budget%20is%3A%20" target="_blank" rel="noopener" data-label="mobile bar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.5-4A8 8 0 1 1 9 19z"/></svg>WhatsApp</a></div><style>
+#patch-btn{position:fixed;left:24px;bottom:28px;z-index:60;display:flex;align-items:center;gap:10px;height:56px;padding:0 20px 0 6px;border-radius:28px;background:var(--navy);color:#fff;border:2px solid #fff;box-shadow:0 6px 20px rgba(11,27,63,.28);cursor:pointer;font:600 15px Sora,sans-serif}
+#patch-btn:hover{background:#13285C}
+#patch-btn img{width:44px;height:44px;border-radius:22px;object-fit:cover;background:#22355A}
+#patch-btn:focus-visible,#patch-panel button:focus-visible,#patch-panel a:focus-visible,#patch-panel textarea:focus-visible,#patch-panel input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+#patch-panel{position:fixed;left:24px;bottom:96px;z-index:61;width:370px;max-width:calc(100vw - 32px);height:min(560px,calc(100vh - 130px));background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 18px 50px rgba(11,27,63,.28);display:none;flex-direction:column;overflow:hidden}
+#patch-panel.open{display:flex}
+#patch-panel .ph{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--navy);color:#fff}
+#patch-panel .ph img{width:42px;height:42px;border-radius:21px;object-fit:cover;background:#22355A}
+#patch-panel .ph b{display:block;font:600 16px Sora,sans-serif}#patch-panel .ph span{font-size:12.5px;color:#C9D3E8}
+#patch-panel .ph button{margin-left:auto;background:none;border:0;color:#fff;font-size:26px;line-height:1;cursor:pointer;padding:4px 8px;border-radius:8px}
+#patch-log{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:#F5F8FE}
+#patch-log .m{white-space:pre-line;max-width:86%;padding:10px 14px;border-radius:16px;font-size:15px;line-height:1.5;overflow-wrap:anywhere}
+#patch-log .b{background:#fff;border:1px solid var(--line);color:var(--navy);border-bottom-left-radius:4px;align-self:flex-start}
+#patch-log .u{background:var(--navy);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+#patch-chips{padding:10px 14px 14px;display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);background:#fff;max-height:42%;overflow-y:auto}
+#patch-chips .c,#patch-chips a.c{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border-radius:20px;border:1.5px solid var(--navy);background:#fff;color:var(--navy);font:500 14px Inter,sans-serif;cursor:pointer;text-decoration:none}
+#patch-chips .c:hover,#patch-chips a.c:hover{background:var(--soft)}
+#patch-chips .g{background:var(--gold);border-color:var(--gold);font-weight:600}
+#patch-chips form{width:100%;display:flex;flex-direction:column;gap:8px}
+#patch-chips input,#patch-chips textarea{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font:15px Inter,sans-serif;color:var(--navy)}
+#patch-chips textarea{min-height:76px;resize:vertical}
+@media (max-width:1024px){#patch-btn{bottom:86px;left:16px;height:52px}#patch-btn img{width:40px;height:40px}#patch-panel{left:16px;right:16px;bottom:148px;width:auto;max-width:none;height:min(520px,calc(100vh - 170px))}}
+@media (max-width:420px){#patch-btn span{display:none}#patch-btn{padding:0 6px}}
+@media (prefers-reduced-motion:no-preference){#patch-log .m{animation:pin .18s ease-out}@keyframes pin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+</style>
+<button type="button" id="patch-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="patch-panel"><img src="assets/patch-face.jpg" alt="" width="44" height="44"><span>Ask Patch</span></button>
+<div id="patch-panel" role="dialog" aria-label="Chat with Patch" aria-modal="false">
+<div class="ph"><img src="assets/patch-face.jpg" alt="" width="42" height="42"><div><b>Patch</b><span>2ndPhase's helper. Tap an answer below.</span></div><button type="button" id="patch-x" aria-label="Close chat">&times;</button></div>
+<div id="patch-log" role="log" aria-live="polite"></div>
+<div id="patch-chips"></div>
+</div>
+<script>
+(function(){
+var D={"wa": "27649059714", "tel": "tel:0649059714", "phone": "064 905 9714", "hours": "8am to 6pm, Mon to Fri", "fee": "R250", "warranty": 6, "offer": true, "addr": "135 De Wet St, Krugersdorp 1741", "maps": "https://www.google.com/maps/search/?api=1&query=2ndPhase+Computing+135+De+Wet+St+Krugersdorp", "services": ["Laptop or PC not working", "Slow, virus or software issues", "Lost files or water damage", "TV problems", "Need a new PC or parts", "Business IT support", "CCTV and security", "POS and fuel station support", "Insurance claim", "Something else"]},btn=document.getElementById('patch-btn'),panel=document.getElementById('patch-panel'),log=document.getElementById('patch-log'),chips=document.getElementById('patch-chips'),started=false,topic='';
+function wa(m){return 'https://wa.me/'+D.wa+'?text='+encodeURIComponent(m)}
+function track(e){window.dataLayer&&window.dataLayer.push({event:e,page:location.pathname})}
+function say(t,who){var d=document.createElement('div');d.className='m '+(who||'b');d.textContent=t;log.appendChild(d);log.scrollTop=log.scrollHeight}
+function mk(t,cls,fn,href){var e=document.createElement(href?'a':'button');e.className='c '+(cls||'');e.textContent=t;if(href){e.href=href;if(/^https?:/.test(href)){e.target='_blank';e.rel='noopener'}if(fn)e.addEventListener('click',fn)}else{e.type='button';e.addEventListener('click',fn)}return e}
+function set(list){chips.innerHTML='';list.forEach(function(c){chips.appendChild(c)})}
+function ask(label,fn){return mk(label,'',function(){say(label,'u');setTimeout(fn,220)})}
+function waChip(label,msg){return mk(label,'g',function(){track('patch_whatsapp')},wa(msg||'Hi 2ndPhase, I have a question.'))}
+function after(){set([ask('Back to the main menu',menu),waChip('Message Albertus on WhatsApp')])}
+function menu(){
+  var l=[ask('Something is broken',broken),ask('What does it cost?',cost),ask('Is it worth repairing?',repairworth),ask('Opening hours',hours),ask('Warranty',warranty),ask("What's my old device worth?",worth),ask('Specials for sale',specials),ask('Where are you?',where)];
+  if(D.offer)l.push(ask('Free diagnostic offer',offer));
+  l.push(waChip('Talk to Albertus'));set(l)}
+var FIX=[
+{l:'Slow laptop',t:"Slow laptop. Things to try:\n1. Do a proper restart (not just closing the lid).\n2. Close programs you're not using and remove apps you don't need.\n3. If the drive is almost full, move photos and videos off it.\n4. Run a virus scan.\nStill slow? It's often a tired hard drive, too little memory or a virus. An SSD upgrade can make an old laptop feel new."},
+{l:"Won't turn on",t:"Won't turn on. Things to try:\n1. Check the charger is plugged in properly at the wall and the laptop, and try another socket.\n2. Unplug the charger, hold the power button for 15 seconds, then plug in and try again.\n3. Look for any light when you plug it in.\nNothing at all? Don't keep pressing buttons. Bring it in and we'll check the charger, battery and board."},
+{l:"Won't charge / battery",t:"Not charging, or battery drains fast:\n1. Check the charger cable for damage and try another wall socket.\n2. Look in the charging port for dust or damage (don't poke it with metal).\n3. Restart and try again.\nFor a fast-draining battery, lower the brightness and close background programs. A battery that won't hold a charge usually needs replacing, but a faulty charger or port can look the same, so bring the charger with you."},
+{l:'Hot or shuts off',t:"Hot, or shutting itself off:\n1. Shut it down fully and let it cool.\n2. Use it on a hard, flat surface, not a bed or couch, so the vents can breathe.\n3. Clear dust from the vents with a soft brush or compressed air.\nStill hot or switching off? The fan is often clogged or the thermal paste has dried out. We can service the cooling."},
+{l:'Screen problem',t:"Black, flickering or cracked screen:\n1. Black screen: check the power light is on, restart, and shine a torch at the screen to see if there's a faint image.\n2. Plug it into a TV or monitor. If that works, the laptop itself is fine and it's the screen or its cable.\nA cracked screen can't be fixed with software. We replace screens. Stop using it if glass is loose."},
+{l:'No Wi-Fi',t:"Wi-Fi won't connect:\n1. Check Wi-Fi is on and Airplane mode is off.\n2. Restart the laptop and your router.\n3. Forget the network and reconnect with the password.\nOther devices work but this laptop doesn't? It could be a driver or the Wi-Fi card. We can sort that out."},
+{l:'Blue screen / restarts',t:"Blue screen or keeps restarting:\n1. Take a photo of the error on the blue screen.\n2. Restart and let Windows finish any updates.\n3. Unplug USB drives and anything extra.\nIf it keeps happening it can be the drive, memory or a driver. Bring it in and send us the photo."},
+{l:'Virus or pop-ups',t:"Pop-ups or a virus:\n1. Don't click the pop-ups or call any number shown on them.\n2. Disconnect from the internet.\n3. Run a scan with your antivirus.\nWe do virus removal and can get it clean and protected. Afterwards, change your passwords from a safe device."},
+{l:'Spilled liquid',t:"Spilled something on it? Act fast:\n1. Switch it off straight away and unplug the charger.\n2. Don't try to turn it on or charge it again.\n3. Stand it upside down like a tent on a towel and wipe the outside.\n4. Bring it to us as soon as you can. Acting quickly gives the best chance of saving it and your files."},
+{l:'Lost files / drive not showing',t:"Lost files, or a drive not showing:\n1. Stop using the device so nothing gets overwritten.\n2. Don't run repair tools or reinstall Windows.\n3. Message Albertus. We do data recovery."},
+{l:'Keyboard / trackpad',t:"Keyboard or trackpad not working:\n1. Restart the laptop.\n2. Check for crumbs or sticky keys. The trackpad may also have been switched off with an Fn key.\n3. Plug in a USB mouse or keyboard to see if it's the hardware.\nWe replace keyboards and trackpads."}
+];
+function broken(){say("Sorry to hear that. What's happening?");
+  var l=FIX.map(function(f){return mk(f.l,'',function(){say(f.l,'u');setTimeout(function(){fix(f)},220)})});
+  l.push(mk('Something else','',function(){say('Something else','u');setTimeout(other,220)}));set(l)}
+function fix(f){say(f.t);set([mk('Still not right? Tell Albertus','g',function(){say('Still not right','u');topic=f.l;setTimeout(describe,220)}),ask('Other problems',broken),ask('Back to the main menu',menu)])}
+function other(){say("No problem. What is it?");set(D.services.map(function(s){return mk(s,'',function(){say(s,'u');topic=s;setTimeout(describe,220)})}))}
+function repairworth(){say("It depends on the fault and the age of the laptop. The "+D.fee+" diagnostic tells you exactly what's wrong and what the fix costs, and then you decide. Curious what your old one is worth? Try our calculator.");set([mk('Open the calculator','g',null,'value-calculator.html'),ask('Something is broken',broken),ask('Back to the main menu',menu)])}
+function describe(){
+  say("Tell Albertus what's going on. For example: Dell laptop, won't charge since yesterday. When you tap send, WhatsApp opens with your message ready.");
+  chips.innerHTML='';var f=document.createElement('form');
+  f.innerHTML='<input id="pc-n" autocomplete="name" placeholder="Your name" aria-label="Your name"><textarea id="pc-d" placeholder="What is wrong?" aria-label="What is wrong?"></textarea>';
+  var s=document.createElement('button');s.type='submit';s.className='c g';s.textContent='Send to Albertus on WhatsApp';f.appendChild(s);
+  f.addEventListener('submit',function(e){e.preventDefault();var n=document.getElementById('pc-n').value.trim(),d=document.getElementById('pc-d').value.trim();
+    var m='Hi 2ndPhase, I need some help.'+(n?'\n\nName: '+n:'\n')+'\nProblem: '+topic+(d?'\nDetails: '+d:'')+'\n\n(Sent from the website chat)';
+    track('patch_whatsapp');window.open(wa(m),'_blank','noopener');say('Sent! Albertus will pick it up on WhatsApp.');after()});
+  chips.appendChild(f);document.getElementById('pc-d').focus()}
+function cost(){say('Diagnostics are a once-off '+D.fee+': we find out what is wrong and what it costs to fix. Repairs are quoted separately after that.');set([ask('Something is broken',broken),ask('Opening hours',hours),waChip('Ask Albertus about a price','Hi 2ndPhase, can you give me an idea of the cost for: '),ask('Back to the main menu',menu)])}
+function hours(){say('Calls and bookings: '+D.hours+'. Weekends: WhatsApp only. WhatsApp is open 24/7, Monday to Sunday.');set([mk('Call '+D.phone,'',function(){track('call_click')},D.tel),waChip('Message us on WhatsApp'),ask('Back to the main menu',menu)])}
+function warranty(){say(D.warranty?'Our repairs come with a '+D.warranty+'-month warranty.':'Ask Albertus about the warranty on your repair.');after()}
+function worth(){say("Our calculator gives you a rough value for your old laptop, phone or PC, and what a shop would offer for it. It only takes a minute.");set([mk('Open the calculator','g',null,'value-calculator.html'),ask('Back to the main menu',menu)])}
+function specials(){say('We have gaming PCs and laptops for sale, checked and ready to go.');set([mk('See the specials','g',null,'specials.html'),ask('Back to the main menu',menu)])}
+function where(){say(D.addr+'. '+'Calls and bookings: '+D.hours+'.');set([mk('Get directions','g',null,D.maps),ask('Back to the main menu',menu)])}
+function offer(){say('First 10 customers get their '+D.fee+' diagnostic free. Share our website with 5 friends and WhatsApp us the screenshot. One free diagnostic per customer, and repairs are quoted separately.');set([waChip('Claim it on WhatsApp','Hi 2ndPhase, I shared your website with 5 people and would like my free diagnostic. Screenshot attached.'),ask('Back to the main menu',menu)])}
+function open(){panel.classList.add('open');btn.setAttribute('aria-expanded','true');if(!started){started=true;track('patch_open');say("Hi, I'm Patch, the 2ndPhase helper. What can I help you with?");menu()}panel.querySelector('#patch-x').focus()}
+function close(){panel.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus()}
+btn.addEventListener('click',function(){panel.classList.contains('open')?close():open()});
+document.getElementById('patch-x').addEventListener('click',close);
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&panel.classList.contains('open'))close()});
+})();
+</script>
 <script>
 (function(){
 var d=document,menu=d.getElementById('menu'),mb=d.getElementById('menuBtn');
@@ -293,7 +381,7 @@ d.addEventListener('keydown',function(e){if(e.key==='Escape')shut()});
 menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',shut)});
 // Calls only during business hours (South African time). WhatsApp is 24/7.
 function saNow(){try{var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Africa/Johannesburg',hour:'numeric',hourCycle:'h23',weekday:'short'}).formatToParts(new Date()),o={};p.forEach(function(x){o[x.type]=x.value});return{h:+o.hour,d:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday)}}catch(e){var n=new Date(Date.now()+(120+new Date().getTimezoneOffset())*60000);return{h:n.getHours(),d:n.getDay()}}}
-var t=saNow(),days=[1, 2, 3, 4, 5, 6],open=t.h>=8&&t.h<18&&(!days||days.indexOf(t.d)>-1);
+var t=saNow(),days=[1, 2, 3, 4, 5],open=t.h>=8&&t.h<18&&(!days||days.indexOf(t.d)>-1);
 if(!open)d.documentElement.classList.add('after');
 // Click tracking, ready for Google Analytics / Ads when added
 window.dataLayer=window.dataLayer||[];
